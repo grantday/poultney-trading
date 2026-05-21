@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { contact } from "@/lib/contact";
 
 export default function Footer() {
   return (
@@ -37,16 +38,16 @@ export default function Footer() {
               <li><Link href="/#about">About</Link></li>
               <li><Link href="/insights">Insights</Link></li>
               <li><Link href="/#why">Why us</Link></li>
-              <li><Link href="/#contact">Contact</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4>Contact</h4>
             <ul>
-              <li><a href="tel:+263770000000">+263 77 000 0000</a></li>
-              <li><a href="mailto:sales@poultneytrading.co.zw">sales@poultneytrading.co.zw</a></li>
-              <li>Harare, Zimbabwe</li>
+              <li><a href={`tel:${contact.phoneTel}`}>{contact.phoneDisplay}</a></li>
+              <li><a href={`mailto:${contact.email}`}>{contact.email}</a></li>
+              <li>{contact.address}</li>
             </ul>
           </div>
         </div>

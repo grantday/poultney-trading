@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { contact } from "@/lib/contact";
+
 export default function CTA() {
   return (
     <section id="contact" className="cta">
@@ -8,13 +11,16 @@ export default function CTA() {
           <h2 style={{ marginTop: 24 }}>
             Let's talk about your <em>next order</em>.
           </h2>
-          <div style={{ marginTop: 32 }}>
-            <a href="mailto:sales@poultneytrading.co.zw" className="btn btn-primary">
+          <div style={{ marginTop: 32, display: "flex", flexWrap: "wrap", gap: 16 }}>
+            <a href={`mailto:${contact.email}`} className="btn btn-primary">
               Request a Quote
               <svg className="arrow" viewBox="0 0 16 16" fill="none">
                 <path d="M2 8h12m0 0l-5-5m5 5l-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
+            <Link href="/contact" className="btn btn-ghost">
+              Full contact details
+            </Link>
           </div>
         </div>
 
@@ -27,7 +33,7 @@ export default function CTA() {
             </span>
             <div>
               <div className="label">Call us</div>
-              <div className="value">+263 77 000 0000</div>
+              <a href={`tel:${contact.phoneTel}`} className="value">{contact.phoneDisplay}</a>
             </div>
           </div>
 
@@ -39,7 +45,7 @@ export default function CTA() {
             </span>
             <div>
               <div className="label">Email us</div>
-              <div className="value">sales@poultneytrading.co.zw</div>
+              <a href={`mailto:${contact.email}`} className="value">{contact.email}</a>
             </div>
           </div>
 
@@ -52,7 +58,7 @@ export default function CTA() {
             </span>
             <div>
               <div className="label">Visit us</div>
-              <div className="value">Harare, Zimbabwe</div>
+              <div className="value">{contact.address}</div>
             </div>
           </div>
         </div>
