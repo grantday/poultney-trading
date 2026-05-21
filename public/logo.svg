@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="30" fill="#234c30"/>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#e87722" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Inner ring -->
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#faf6ef" stroke-width="0.4" opacity="0.25"/>
+
+  <!-- Leaf / feather body -->
+  <path d="M32 12 C 20 22, 18 38, 32 52 C 46 38, 44 22, 32 12 Z" fill="#faf6ef"/>
+
+  <!-- Central spine -->
+  <path d="M32 14 L 32 50" stroke="#234c30" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Feather barbs / leaf veins -->
+  <path d="M32 22 L 26 26" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 22 L 38 26" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 29 L 24 33" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 29 L 40 33" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 36 L 25 41" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 36 L 39 41" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 43 L 27 47" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+  <path d="M32 43 L 37 47" stroke="#234c30" stroke-width="1.1" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Orange seed / sun accent at the tip -->
+  <circle cx="32" cy="16" r="2.2" fill="#e87722"/>
+</svg>
